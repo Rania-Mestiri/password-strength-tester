@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Evaluator</h1>
+        <p class="subtitle">Test your password against OWASP security standards.</p>
+        
+        <!-- Passphrase encouragement as per report -->
+        <div class="tip-box">
+            <strong>💡Pro Tip :</strong> Consider using a <em>passphrase</em> (a memorable sentence) for maximum security!
+        </div>
 
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="e.g., john_doe">
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+
+        <button onclick="checkPassword()">Analyze Password</button>
+
+        <!-- Visual Feedback Element -->
+        <div class="meter-container">
+            <div id="meter-bar" class="meter-bar"></div>
+        </div>
+
+        <h3 id="result"></h3>
+        <ul id="feedback"></ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

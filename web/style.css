@@ -1,0 +1,133 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eff6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #070606;
+}
+
+/* Main Application Card */
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: #484545;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tip-box {
+    background-color: #f2f7ff;
+    border-left: 4px solid #065dba;
+    padding: 10px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: #014ea1;
+}
+
+/* Form Elements */
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box; /* Ensures padding doesn't break width */
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #8da9c8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #116ed2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #05458b;
+}
+
+/* Strength Meter */
+.meter-container {
+    width: 100%;
+    height: 8px;
+    background-color: #dedede;
+    border-radius: 4px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.meter-bar {
+    height: 100%;
+    width: 0%;
+    transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+/* Dynamic Feedback Styling */
+#result {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+#feedback {
+    font-size: 14px;
+    color: #545353;
+    padding-left: 20px;
+}
+
+#feedback li {
+    margin-bottom: 5px;
+}
+
+/* Color Classes applied by JavaScript */
+.weak-text { color: #dc3545; }
+.medium-text { color: #fd7e14; }
+.strong-text { color: #28a745; }
+
+.weak-bg { background-color: #dc3545; }
+.medium-bg { background-color: #fd7e14; }
+.strong-bg { background-color: #28a745; }
